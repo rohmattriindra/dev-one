@@ -56,12 +56,12 @@ This is sample of Poc / Evidence that proves EC2 instance with type M3.Xlarge ab
 <br>
 
 # Monitoring
-I proposed using datadog as monitoring tool both infrastructure or application layer. Why we choose datadog other monitoring tools like prometheus etc
+I proposed using datadog as monitoring tool both infrastructure or application layer. Why I choose datadog rather than other monitoring tools like prometheus etc
 * Metric and time series data collection
 * Integrations with other tools like Opsgenie, Slack
-* Creation of monitors to trigger alarms and notify teams. so if there's issue the engineer will retrieve alert notification and we can immnediately to check & troubleshoting related the issue
+* Creation of monitors to trigger alarms and notify teams. So if there's issue, the engineer will receive alert notification and we can immnediately to check & troubleshoting related the issue
 * Good API documentation and very responsive customer service.
-* Datadog using AWS as the main infrastructure, so when we have infrastruture at the sampe location, we can reduce latency from dd-agent that installed in our infrastructure to API Datadog
+* Datadog using AWS as the main infrastructure, so when we use Cloud infrastruture at the sampe location/region, we can reduce latency from dd-agent that installed in our infrastructure to API Datadog
 <br>
 <br>
 ## Server Monitoring
@@ -74,7 +74,7 @@ There are many agent that can integrated in our infratructure, but in this case 
 * Memory Usage
 * Uptime 
 
-The following sample agent that provided by datadog and aso we can create a custom metric use datadog agent check
+The following sample agent that provided by datadog and also we can create a custom metric use datadog agent check
 
 ![img](img/dd-agent-svr.png)
 
