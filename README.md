@@ -64,6 +64,7 @@ I proposed using datadog as monitoring tool both infrastructure or application l
 * Datadog using AWS as the main infrastructure, so when we use Cloud infrastruture at the sampe location/region, we can reduce latency from dd-agent that installed in our infrastructure to API Datadog
 <br>
 <br>
+
 ## Server Monitoring
 
 There are many agent that can integrated in our infratructure, but in this case we just give a sample as mandatory metric that will be used in production
