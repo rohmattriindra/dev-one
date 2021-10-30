@@ -67,7 +67,7 @@ I proposed using datadog as monitoring tool both infrastructure or application l
 
 ## Server Monitoring
 
-There are many agent that can integrated in our infratructure, but in this case we just give a sample as mandatory metric that will be used in production
+There are many agents that can integrated on server, but in this case I only provide a sample metric that will be used in production
 
 * Concurrent Connections
 * Network Traffic Utilization
