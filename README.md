@@ -61,7 +61,7 @@ I proposed using datadog as monitoring tool both infrastructure or application l
 * Integrations with other tools like Opsgenie, Slack
 * Creation of monitors to trigger alarms and notify teams. So if there's issue, the engineer will receive alert notification and we can immnediately to check & troubleshoting related the issue
 * Good API documentation and very responsive customer service.
-* Datadog using AWS as the main infrastructure, so when we use Cloud infrastruture at the sampe location/region, we can reduce latency from dd-agent that installed in our infrastructure to API Datadog
+* Datadog using AWS as the main infrastructure, so when we use Cloud infrastruture at the same location/region, we can reduce latency from dd-agent that installed in our infrastructure to API Datadog
 <br>
 <br>
 
