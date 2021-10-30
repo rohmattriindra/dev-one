@@ -1,8 +1,8 @@
 # Description
 
-The following Infrastructure Design for dev-dev-one.it to serve several service that will be run in our environment both staging or production
+The following Infrastructure Design for dev-one.it to serve several services that will be run in staging or production environment
 
-# Design HA
+# Architecture Design
 ![img](img/infra-design.png)
 
 
@@ -20,8 +20,8 @@ The following Infrastructure Design for dev-dev-one.it to serve several service 
 
 # List of EC2 Instances
 
-| Service Name      | IP Private    | Resource     | Availability Zone|
-|-------------------|---------------|--------------|------------------|
+| Service Name      | IP Private    | Resource      | Availability Zone|
+|-------------------|---------------|---------------|------------------|
 | api-1.dev-one.it  | 172.31.1.101  | EC2 M3.XLarge |     Zone-A       |
 | api-2.dev-one.it  | 172.31.1.102  | EC2 M3 XLarge |     Zone-A       |
 | api-3.dev-one.it  | 172.31.1.101  | EC2 M3 XLarge |     Zone-A       |
@@ -33,10 +33,10 @@ The following Infrastructure Design for dev-dev-one.it to serve several service 
 
 <br>
 
-# Resource and Design Decicion??
+# Resource and Design
 1. I proposed separated zone, so if there's disaster in Zone-A. resources in Zone B will be serve traffic from client
-2. Since we have expectation each instance able to handle more thank 10k concurrent connection, we suggest to use EC2 instance with type M3.XLarge. which the instance as high performance specs. Just in case when the traffic reach until 100k, we also apply auto scaling based on cpu utilization
-3. VPC : Provide address space and as foundation layer
+2. Since we have expectation each instance able to handle more thank 10k concurrent connection, we suggest to use EC2 instance with type M3.XLarge. which the instance as high performance specs. Just in case when the traffic reach until 100k, we can apply auto scaling based on cpu utilization
+3. VPC : Provide allocation address space
 4. ElB as load balancer to distribute load traffic from client toward instance in different zone
 5. NAT Gateway : Provide outgoing connection from several intances using IP Static
 6. Route53 : Provide highly available and scalable DNS for *.dev-one.it, which handles DNS for both the TCP and UDP traffic requests
@@ -56,7 +56,7 @@ This is sample of Poc / Evidence that proves EC2 instance with type M3.Xlarge ab
 <br>
 
 # Monitoring
-We're proposed using datadog as monitoring tool both infrastructure or application layer. Why we choose datadog other monitoring tools like prometheus etc
+I proposed using datadog as monitoring tool both infrastructure or application layer. Why we choose datadog other monitoring tools like prometheus etc
 * Metric and time series data collection
 * Integrations with other tools like Opsgenie, Slack
 * Creation of monitors to trigger alarms and notify teams. so if there's issue the engineer will retrieve alert notification and we can immnediately to check & troubleshoting related the issue
