@@ -24,12 +24,12 @@ The following Infrastructure Design for dev-one.it to serve several services tha
 |-------------------|---------------|---------------|------------------|
 | api-1.dev-one.it  | 172.31.1.101  | EC2 M3.XLarge |     Zone-A       |
 | api-2.dev-one.it  | 172.31.1.102  | EC2 M3 XLarge |     Zone-A       |
-| api-3.dev-one.it  | 172.31.1.101  | EC2 M3 XLarge |     Zone-A       |
-| api-4.dev-one.it  | 172.31.1.102  | EC2 M3 XLarge |     Zone-A       |
+| api-3.dev-one.it  | 172.31.1.103  | EC2 M3 XLarge |     Zone-A       |
+| api-4.dev-one.it  | 172.31.1.104  | EC2 M3 XLarge |     Zone-A       |
 | api-1.dev-one.it  | 172.31.2.101  | EC2 M3 XLarge |     Zone-B       |
 | api-2.dev-one.it  | 172.31.2.102  | EC2 M3 XLarge |     Zone-B       |
-| api-3.dev-one.it  | 172.31.2.101  | EC2 M3 XLarge |     Zone-B       |
-| api-4.dev-one.it  | 172.31.2.102  | EC2 M3 XLarge |     Zone-B       |
+| api-3.dev-one.it  | 172.31.2.103  | EC2 M3 XLarge |     Zone-B       |
+| api-4.dev-one.it  | 172.31.2.104  | EC2 M3 XLarge |     Zone-B       |
 
 <br>
 
